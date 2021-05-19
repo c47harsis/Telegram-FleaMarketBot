@@ -1,0 +1,10 @@
+bot:
+  username: FleaMarketBot
+  token: <token>
+
+db:
+  host: 127.0.0.1
+  port: 5432
+  name: fleamarket
+  username: fleamarketbot
+  password: <password>

@@ -1,0 +1,9 @@
+single: testSingle
+
+complex:
+  additional:
+    field1: testComplexAdditionalOneField1
+    field2: testComplexAdditionalOneField2
+  multiple:
+    - testComplexMultiple0
+    - testComplexMultiple1

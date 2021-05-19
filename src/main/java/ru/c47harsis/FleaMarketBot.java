@@ -5,18 +5,19 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import ru.c47harsis.config.Config;
 
 @Slf4j
 public class FleaMarketBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return Settings.BOT_USERNAME;
+        return Config.BOT_USERNAME.getValue();
     }
 
     @Override
     public String getBotToken() {
-        return Settings.BOT_TOKEN;
+        return Config.BOT_TOKEN.getValue();
     }
 
     @Override

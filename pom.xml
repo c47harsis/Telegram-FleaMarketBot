@@ -20,6 +20,9 @@
         <telegrambots.version>5.2.0</telegrambots.version>
         <lombok.version>1.18.20</lombok.version>
         <logback.version>1.2.3</logback.version>
+        <postgresql.version>42.2.20</postgresql.version>
+        <jackson.version>2.12.3</jackson.version>
+        <guava.version>30.1.1-jre</guava.version>
     </properties>
 
     <dependencies>
@@ -50,10 +53,40 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.8.1</version>-->
+<!--                <configuration>-->
+<!--                    <annotationProcessors>-->
+<!--                         <annotationProcessor>ru.c47harsis.AProcessor</annotationProcessor>-->
+<!--                    </annotationProcessors>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
